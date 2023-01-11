@@ -1,0 +1,52 @@
+:root {
+    --mainColor: #0A2647;
+    --secondColor: #144272;
+    --thirdColor: #205295;
+    --fourthColor: #2C74B3;
+    --textColor: white
+  }
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    color:inherit;
+    transition-duration: 1s;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: var(--mainColor);
+    color: var(--textColor);
+}
+header nav li{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+.selected{
+    background-color: var(--fourthColor);
+}
+
+main{
+    display: flex;
+}
+
+
+.hidden{
+    display: none;
+   
+}
+
+
+
+footer{
+    
+    text-align: center;
+    padding: 50px;
+    background-color: var(--secondColor);
+    color: var(--textColor);
+}
