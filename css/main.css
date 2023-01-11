@@ -24,6 +24,7 @@ header{
     left: 0px;
     right: 0px;
     top: 0px;
+    flex-wrap: wrap;
 }
 header nav li{
     display: inline-block;
@@ -31,6 +32,11 @@ header nav li{
     font-size: 1.2em;
     text-transform: capitalize;
     border-radius: 5px;
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .selected{
     background-color: var(--fourthColor);
@@ -60,6 +66,7 @@ section{
     align-items: center;
     justify-content: center;
     color: var(--textColor);
+    padding: 20px;
    }
 #welcome h2{
     font-size: 4em;
@@ -67,6 +74,7 @@ section{
 }
 #welcome p{
     font-size: 2em;
+    text-align: justify;
 }
 
 /* login*/
