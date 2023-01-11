@@ -20,7 +20,9 @@ header{
     padding: 20px 50px;
     background-color: var(--mainColor);
     color: var(--textColor);
-    position: sticky;
+    position: fixed;
+    left: 0px;
+    right: 0px;
     top: 0px;
 }
 header nav li{
@@ -42,15 +44,18 @@ main{
 }
 .hidden{
     display: none!important;
-   
+}
+section{
+    width: 100%;
+    margin-top: 20px;
 }
 
 
 /* Welcome sectionn */
 #welcome{
+   
     display: flex;
     flex-direction: column;
-    width: 100%;
     height: 100vh;
     align-items: center;
     justify-content: center;
@@ -64,9 +69,91 @@ main{
     font-size: 2em;
 }
 
+/* login*/
+#login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#login .container{
+    border: 1px solid var(--thirdColor);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+#login .container h2{
+    font-size: 2em;
+    color:var(--textColor);
+ 
+}
+#login .fieldInput{
+    position: relative;
+    padding: 15px;
+    margin-top: 10px;
+   
+}
+#login input {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid var(--textColor);
+    outline: 0;
+    font-size: 1.3rem;
+    color: white;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+#login input::placeholder {
+      color: transparent;
+}
+#login input:placeholder-shown ~ label {
+      font-size: 1.3rem;
+      cursor: text;
+      top: 25px;
+}
+#login label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: var(--textColor);
+  }
+
+  #login input:focus ~ label {   
+      position: absolute;
+      top: 0;
+      display: block;
+      transition: 0.2s;
+      font-size: 1rem;
+      color: white;
+      font-weight:700;    
+}
+#login input:focus{
+    padding-bottom: 6px;  
+    font-weight: 700;
+    border-width: 3px;
+    border-image: radial-gradient(circle, rgba(32,82,149,1) 0%, rgb(187, 193, 197) 100%);
+    border-image-slice: 1;
+}
+#login button{
+    border: 0px;
+    font-size: 1em;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition-duration: 500ms;
+}
+#login button:hover{
+    background-color: var(--fourthColor);
+    color: white;
+}
+  
 /* footer */
 footer{
-    
     text-align: center;
     padding: 50px;
     background-color: var(--secondColor);
