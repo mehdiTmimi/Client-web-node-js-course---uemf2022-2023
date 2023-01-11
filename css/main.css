@@ -77,14 +77,14 @@ section{
     text-align: justify;
 }
 
-/* login*/
-#login{
+/* login / Register */
+#login, #register{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
-#login .container{
+#login .container , #register .container{
     border: 1px solid var(--thirdColor);
     border-radius: 10px;
     display: flex;
@@ -92,18 +92,18 @@ section{
     align-items: center;
     padding: 20px;
 }
-#login .container h2{
+#login .container h2, #register .container h2{
     font-size: 2em;
     color:var(--textColor);
  
 }
-#login .fieldInput{
+#login .fieldInput, #register .fieldInput{
     position: relative;
     padding: 15px;
     margin-top: 10px;
    
 }
-#login input {
+#login input, #register input  {
     width: 100%;
     border: 0;
     border-bottom: 2px solid var(--textColor);
@@ -114,15 +114,15 @@ section{
     background: transparent;
     transition: border-color 0.2s;
 }
-#login input::placeholder {
+#login input::placeholder, #register input::placeholder {
       color: transparent;
 }
-#login input:placeholder-shown ~ label {
+#login input:placeholder-shown ~ label, #register input:placeholder-shown ~ label {
       font-size: 1.3rem;
       cursor: text;
       top: 25px;
 }
-#login label {
+#login label, #register label {
     position: absolute;
     top: 0;
     display: block;
@@ -131,7 +131,7 @@ section{
     color: var(--textColor);
   }
 
-  #login input:focus ~ label {   
+#login input:focus ~ label, #register input:focus ~ label {   
       position: absolute;
       top: 0;
       display: block;
@@ -140,14 +140,14 @@ section{
       color: white;
       font-weight:700;    
 }
-#login input:focus{
+#login input:focus, #register input:focus{
     padding-bottom: 6px;  
     font-weight: 700;
     border-width: 3px;
     border-image: radial-gradient(circle, rgba(32,82,149,1) 0%, rgb(187, 193, 197) 100%);
     border-image-slice: 1;
 }
-#login button{
+#login button, #register button{
     border: 0px;
     font-size: 1em;
     padding: 5px 15px;
@@ -155,7 +155,7 @@ section{
     margin-top: 20px;
     transition-duration: 500ms;
 }
-#login button:hover{
+#login button:hover, #register button:hover{
     background-color: var(--fourthColor);
     color: white;
 }
