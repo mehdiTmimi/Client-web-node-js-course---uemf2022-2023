@@ -1,6 +1,7 @@
 import { login } from "./auth.js";
+import { loginBtn } from "./config.js";
 
-const loginBtn = document.getElementById("loginBtn");
+
 window.addEventListener('popstate', function (event) {
 	singlePageManger(getPath())
 
