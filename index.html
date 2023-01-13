@@ -15,56 +15,41 @@
         <h1>Client web (Rest Api)</h1>
         <nav>
             <ul>
-                <li><a href="#welcome">Welcome</a></li>
-                <li><a href="#application">application</a></li>
-                <li><a href="#login">login</a></li>
-                <li><a href="#register">register</a></li>
+                <li id="welcomeElement"><a href="#welcome">Welcome</a></li>
+                <li id="applicationElement"><a href="#application">application</a></li>
+                <li id="loginElement"><a href="#login">login</a></li>
+                <li id="registerElement"><a href="#register">register</a></li>
             </ul>
         </nav>
     </header>
     <main  id="container">
+         <!-- welcome -->
         <section class="component hidden" id="welcome">
             <h2>Welcome</h2>
             <p>to our web client for a web service developed using the rest api convention</p>
         </section>
-        <section class="component hidden" id="register">
-            <div class="container">
-                <h2>Register</h2>
-                <div class="fieldInput">
-                    <input type="input"  placeholder="Name" name="emailRegister" id='emailRegister' />
-                    <label for="emailRegister" >Email</label>
-                  </div>
-                <div class="fieldInput">
-                    <input type="password" placeholder="Password" name="passwordRegister" id='passwordRegister' />
-                    <label for="passwordRegister" >Password</label>
-                </div>
-                <div class="fieldInput">
-                    <input type="password" placeholder="repeat password" name="passwordRegister2" id='passwordRegister2' />
-                    <label for="passwordRegister2" >Repeat password</label>
-                </div>
-                <button>Submit</button>
-            </div>
-        </section>
+         <!-- end welcome -->
+         <!-- application -->
         <section class="component hidden" id="application">
-            <article id="addNote">
+            <article id="addMemo">
                 <h2>
-                    Add Note
+                    Add Memo
                 </h2>
                 <div>
-                    <input  placeholder="value" type="number">
+                    <input id="memoInput"  placeholder="content" type="text">
                 </div>
                 <div class="btns">
                     <button id="resetBtn">Reset</button>
                     <button id="addBtn">Add</button>
                 </div>
             </article>
-            <article id="listNote">
-                <h2>List of Notes</h2>
+            <article id="listMemo">
+                <h2>List of Memos</h2>
                 <table>
                     <thead>
                         <tr>
                             <th>id</th>
-                            <th>note</th>
+                            <th>content</th>
                             <th>Options</th>
                         </tr>
                     </thead>
@@ -74,6 +59,8 @@
                 </table>
             </article>
         </section>
+         <!-- end application -->
+         <!-- login -->
         <section class="component hidden" id="login">
             
             <div class="container">
@@ -89,6 +76,31 @@
                 <button id="loginBtn">login</button>
             </div>
         </section>
+         <!-- end login -->
+        <!-- register -->
+        <section class="component hidden" id="register">
+            <div class="container">
+                <h2>Register</h2>
+                <div class="fieldInput">
+                    <input type="input"  placeholder="Name" name="emailRegister" id='emailRegister' />
+                    <label for="emailRegister" >Email</label>
+                  </div>
+                <div class="fieldInput">
+                    <input type="input"  placeholder="Name" name="nameRegister" id='nameRegister' />
+                    <label for="nameRegister" >Name</label>
+                </div>
+                <div class="fieldInput">
+                    <input type="password" placeholder="Password" name="passwordRegister" id='passwordRegister' />
+                    <label for="passwordRegister" >Password</label>
+                </div>
+                <div class="fieldInput">
+                    <input type="password" placeholder="repeat password" name="passwordRegister2" id='passwordRegister2' />
+                    <label for="passwordRegister2" >Repeat password</label>
+                </div>
+                <button id="registerBtn">Submit</button>
+            </div>
+        </section>
+         <!--end register -->
     </main>
     <footer>
         @copyright Tmimi Mehdi 2022 

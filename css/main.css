@@ -12,7 +12,7 @@
     padding: 0px;
     text-decoration: none;
     color:inherit;
-    transition-duration: 1s;
+    transition-duration: 500ms;
 }
 /* header */
 header{
@@ -34,6 +34,10 @@ header nav li{
     font-size: 1.2em;
     text-transform: capitalize;
     border-radius: 5px;
+}
+header nav li:hover{
+    background-color: var(--textColor);
+    color: var(--mainColor);
 }
 header nav ul{
     display: flex;
@@ -173,7 +177,7 @@ section{
     padding: 200px;
     gap: 20px;
    }
-#application #addNote{
+#application #addMemo{
     width: 300px;
     border: 1px solid lightgray;
     height: fit-content;
@@ -182,7 +186,7 @@ section{
     flex-direction: column;
     align-items: center;
 }
-#application #addNote input{
+#application #addMemo input{
     border: 0px;
     border-bottom: 1px solid white;
     margin: 20px 0px;
@@ -190,40 +194,40 @@ section{
     padding: 5px;
     background-color: transparent;
 }
-#application #addNote input::placeholder{
+#application #addMemo input::placeholder{
     color: var(--textColor);
    
 }
-#application #addNote .btns{
+#application #addMemo .btns{
     display: flex;
     justify-content: center;
     gap: 15px;
 }
-#application #addNote .btns button{
+#application #addMemo .btns button{
     border: 0px;
     border-radius: 5px;
     width: 80px;
     font-size: 1em;
     padding: 5px 10px;
 }
-#application #addNote #resetBtn{
+#application #addMemo #resetBtn{
     background-color: var(--textColor);
     color: var(--mainColor);
 }
-#application #addNote #resetBtn:hover{
+#application #addMemo #resetBtn:hover{
     color: var(--textColor);
     background-color: var(--mainColor);
 }
-#application #addNote #addBtn{
+#application #addMemo #addBtn{
     background-color: var(--mainColor);
     color: var(--textColor);
 }
-#application #addNote #addBtn:hover{
+#application #addMemo #addBtn:hover{
     color: var(--mainColor);
     background-color: var(--textColor);
 }
 
-#application #listNote{
+#application #listMemo{
     max-width: 600px;
     min-width: 300px;
     flex: 1;
@@ -231,11 +235,11 @@ section{
     flex-direction: column;
     align-items: center;
 }
-#application #listNote table{
+#application #listMemo table{
     border-collapse: collapse;
     width: 100%;
 }
-#application #listNote table th,#application #listNote table td{
+#application #listMemo table th,#application #listMemo table td{
     border: 1px solid lightgray;
 }
 /* footer */
